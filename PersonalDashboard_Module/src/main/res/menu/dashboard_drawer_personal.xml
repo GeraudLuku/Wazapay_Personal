@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+            android:title="@string/menu_wallet" />
+        <item
+            android:id="@+id/nav_transaction"
+            android:icon="@drawable/ic_transaction"
+            android:title="@string/menu_transaction" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_client_account_black_24dp"
+            android:title="@string/client" />
+        <item
+            android:id="@+id/nav_payment_methods"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+            android:title="@string/menu_payment_method" />
+        <item
+            android:id="@+id/nav_verifications"
+            android:icon="@drawable/ic_verification"
+            android:title="@string/verifications" />
+        <item
+            android:id="@+id/nav_referral"
+            android:icon="@drawable/ic_referral"
+            android:title="@string/referral" />
+        <item
+            android:id="@+id/nav_agent"
+            android:icon="@drawable/ic_done_all_black_24dp"
+            android:title="@string/other_agents" />
+        <item
+            android:id="@+id/nav_merchant"
+            android:icon="@drawable/ic_done_all_black_24dp"
+            android:title="@string/available_merchant" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_report_black_24dp"
+            android:title="@string/Report" />
+        <item
+            android:id="@+id/nav_review"
+            android:icon="@drawable/ic_rate_review"
+            android:title="@string/Reviews" />
+
+    </group>
+
+</menu>

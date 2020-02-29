@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainVerificationActivity"
+    android:background="#FFFFFF">
+
+
+    <!-- Page one-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ver_paym_page1"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underlines"
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:text="Select Payment Method"
+            android:textColor="#A7A1A1"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:src="@drawable/ic_drop_down"
+            android:padding="8dp"
+            android:onClick="onPaymentMethodDropDown"
+            android:id="@+id/ver_paym_dropdown"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="18dp"
+            android:paddingTop="8dp"
+            android:background="@drawable/payment_methods_bg"
+            android:layout_gravity="end"
+            android:visibility="gone"
+            android:id="@+id/ver_paym_methodsList">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingEnd="16dp"
+                android:src="@drawable/ic_arrow_drop_up_black_24dp"
+                android:onClick="onPaymentMethodDropDown"
+                android:id="@+id/ver_paym_dropup"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MTN Mobile Money"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="18sp"
+                android:paddingBottom="18dp"
+                android:paddingTop="18dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="38dp"
+                android:id="@+id/ver_paym_list_momo"
+                android:onClick="onPaymentmethodClicked"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orange Money"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="18sp"
+                android:paddingBottom="18dp"
+                android:paddingTop="18dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="38dp"
+                android:id="@+id/ver_paym_list_ormo"
+                android:onClick="onPaymentmethodClicked"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit Card"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="18sp"
+                android:paddingBottom="18dp"
+                android:paddingTop="18dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="38dp"
+                android:id="@+id/ver_paym_list_card"
+                android:onClick="onPaymentmethodClicked"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Account"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="18sp"
+                android:paddingBottom="18dp"
+                android:paddingTop="18dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="38dp"
+                android:id="@+id/ver_paym_list_bank"
+                android:onClick="onPaymentmethodClicked"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Page two : mobile money verifications-->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ver_paym_page2">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underlines"
+            android:hint="Enter phone number"
+            android:textSize="18sp"
+            android:paddingEnd="8dp"
+            android:paddingStart="0dp"
+            android:paddingTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the code sent to you"
+            android:textSize="17sp"
+            android:layout_marginTop="30dp"
+            />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/understrokes"
+            android:textSize="18sp"
+            android:paddingEnd="8dp"
+            android:paddingStart="0dp"
+            android:paddingTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn't Recieve a code? Resend Code"
+            android:textSize="17sp"
+            android:layout_marginTop="16dp"
+            />
+
+
+    </LinearLayout>
+
+    <!-- Page three-->
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ver_paym_page3"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underlines"
+            android:hint="Enter Amount charged"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:paddingEnd="8dp"
+            android:paddingStart="0dp"
+            android:paddingTop="20dp"
+            />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underlines"
+            android:hint="Enter Reference Code"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:paddingEnd="8dp"
+            android:paddingStart="0dp"
+            android:paddingTop="20dp"
+            />
+
+    </LinearLayout>
+
+
+    <!-- page four-->
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ver_paym_page4">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/underlines"
+            android:entries="@string/methods"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Info. . ."
+            android:textColor="#000"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underlines"
+            android:hint="Account Number"
+            android:singleLine="true"
+            android:paddingEnd="8dp"
+            android:paddingStart="0dp"
+            android:paddingTop="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underlines"
+            android:hint="Account Holder Name"
+            android:singleLine="true"
+            android:paddingEnd="8dp"
+            android:paddingStart="0dp"
+            android:paddingTop="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underlines"
+            android:hint="Bank Name"
+            android:singleLine="true"
+            android:paddingEnd="8dp"
+            android:paddingStart="0dp"
+            android:paddingTop="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underlines"
+            android:hint="Bank Address"
+            android:singleLine="true"
+            android:paddingEnd="8dp"
+            android:paddingStart="0dp"
+            android:paddingTop="20dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/underlines"
+            android:entries="@string/methods"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/underlines"
+                android:hint="State"
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingTop="20dp"
+                android:layout_weight="1"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/underlines"
+                android:hint="Zip"
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingTop="20dp"
+                android:layout_marginStart="28dp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underlines"
+            android:hint="City"
+            android:singleLine="true"
+            android:paddingEnd="8dp"
+            android:paddingStart="0dp"
+            android:paddingTop="20dp"
+            />
+
+    </LinearLayout>
+
+
+    <!-- page five-->
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ver_paym_page5">
+
+        <include
+            layout="@layout/payment_list_item"/>
+
+        <include
+            layout="@layout/payment_list_item"/>
+
+        <include
+            layout="@layout/payment_list_item"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add new Payment Method"
+                android:textColor="#6B6B6B"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                app:backgroundTint="@color/Primary"
+                android:src="@drawable/ic_add_black_24dp"
+                android:layout_margin="6dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!-- controls -->
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="bottom"
+        android:id="@+id/ver_paym_controls">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Continue"
+            android:textColor="#fff"
+            android:elevation="30dp"
+            android:shadowColor="#000"
+            android:textSize="18sp"
+            android:id="@+id/ver_phone_buttonMain"
+            android:background="@drawable/continue_btn_background"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:layout_marginStart="10dp"
+            android:text="Back"
+            android:textSize="20sp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:id="@+id/ver_phone_buttonText"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

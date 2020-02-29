@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="Primary">#0A845F</color>
+
+    <color name="warning">#FF0000</color>
+    <color name="pending">#E78C13</color>
+
+    <color name="colordefault">#666565</color>
+
+    <color name="colorHighlight">#0A845F</color>
+
+
+    <color name="circleColor">#666565</color>
+
+    <color name="paymentShade">#97DAD9D9</color>
+
+
+    <color name="verTrans">#00000000</color>
+
+</resources>

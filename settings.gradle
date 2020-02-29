@@ -1,0 +1,2 @@
+include ':app', ':OnBoarding_Module', ':Registration_Module', ':Verification_Module', ':PersonalDashboard_Module'
+rootProject.name='Wazapay Personal'

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/onBoardingViewPager"
+        />
+
+
+
+    <!-- bottom control bar with tab indicator and two clickable text -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingRight="26dp"
+        android:paddingLeft="26dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Skip"
+            android:onClick="onBoardingSkipClicked"
+            android:textColor="#D50156AD"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:id="@+id/onBoardingSkip"
+            android:gravity="center"
+            />
+
+
+        <!-- tabs with  -->
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/onBoardingTabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/indicator_selector"
+            app:tabIndicatorHeight="0dp"
+            app:tabGravity="center"
+            app:tabMinWidth="0dp"
+            app:tabPaddingStart="6dp"
+            app:tabPaddingEnd="6dp"
+            />
+
+
+        <!-- next button with onclick>onBoardingNext -->
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Next"
+            android:textColor="#030303"
+            android:onClick="onBoardingNextClicked"
+            android:padding="10dp"
+            android:id="@+id/onBoardingNext"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

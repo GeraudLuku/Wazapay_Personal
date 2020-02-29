@@ -1,0 +1,93 @@
+<resources>
+
+    <string name="google_maps_API_key">AIzaSyDruRed2ZGzJ55-ciZd_Jm0mV7D82v-lOw</string>
+
+    <string name="app_name">WaZaPAY</string>
+    <string name="register">Sign Up</string>
+    <string name="login_email_hint">Email</string>
+    <string name="user_name_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_confirm_password_hint">Confirm Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Not Registered Yet?</string>
+
+    <string name="title_registration">Registration</string>
+    <string name="title_recoverymodule">Recovery Module</string>
+    <string name="title_verification">Verification</string>
+    <string name="title_e_wallet">E-Wallet</string>
+    <string name="title_personaldashboard">Dashboard Personal</string>
+    <string name="title_businessdashboard">Dashboard Business</string>
+    <string name="title_agentdashboard">Dashboard Agent</string>
+
+
+    <string name="card_11_tv">DEPOSIT</string>
+
+    <string name="card_12_tv">WITHDRAWALS</string>
+    <string name="card_13_tv">DIRECT TRANSFER</string>
+
+    <string name="card_21_tv">MONEY REQUEST</string>
+    <string name="card_22_tv">ESCROW TRANSFER</string>
+    <string name="card_23_tv">BULK PAYMENTS</string>
+
+    <string name="card_31_tv">RECURRING PAYMENTS</string>
+
+    <string name="card_32_tv">INVOICING</string>
+    <string name="card_33_tv">CURRENCY EXCHANGE</string>
+    <string name="card_41_tv">UTILITY BILLS</string>
+    <string name="card_42_tv">NJANGI</string>
+    <string name="card_43_tv">PIGGY WALLETS</string>
+    <string name="card_51_tv">CASH-FLOW AGENTS</string>
+    <string name="card_52_tv">DONATIONS</string>
+    <string name="card_53_tv">REFERRAL SYSTEM</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Profile Name</string>
+    <string name="nav_header_subtitle">user@email.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_settings">Setting</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="menu_personal_dashboard">Dashboard</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_wallet">Wallet</string>
+    <string name="menu_transaction">Transactions</string>
+    <string name="menu_contacts">Contacts</string>
+    <string name="menu_payment_method">Payment Methods</string>
+    <string name="verifications">Verifications</string>
+    <string name="referral">Referral</string>
+    <string name="available_agents">Available Agents</string>
+    <string name="available_merchant">Available Merchant</string>
+    <string name="Report">Report</string>
+    <string name="Reviews">Reviews</string>
+
+    <string name="client">Clients</string>
+    <string name="other_agents">Other Agents</string>
+    <string name="developers_api">Developer API</string>
+    <string name="other_merchants">Other Merchants</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_on_boarding">OnBoarding</string>
+    <string name="title_deposit">Deposit Module</string>
+    <string name="title_withdrawal">Withdrawal</string>
+    <string name="title_directtransfer">Direct Transfer</string>
+    <string name="title_paymentrequest">Payment Request</string>
+    <string name="title_escrow">Escrow</string>
+    <string name="title_bulkpayments">Bulk Payments</string>
+    <string name="title_recurringpayments">Recurring Payments</string>
+    <string name="title_invoicing">Invoicing</string>
+    <string name="title_cashflowagents">Cashflow Agents</string>
+    <string name="title_paymentgateway">Payment Gateway</string>
+    <string name="title_njangi">Njangi</string>
+    <string name="title_piggywallet">Piggy Wallet</string>
+    <string name="title_utilitybills">Utility Bills</string>
+    <string name="title_currencyexchange">Currency Exchange</string>
+    <string name="title_donations">Donations</string>
+    <string name="title_referralsystem">Referral System</string>
+    <string name="title_agentcashin">Agent Cash-In</string>
+    <string name="title_agentcashout">Agent Cash-Out</string>
+    <string name="title_personaldashboard_module">personal_dashboard</string>
+    <string name="title_activity_personal_dashboard">PersonalDashboardActivity</string>
+</resources>

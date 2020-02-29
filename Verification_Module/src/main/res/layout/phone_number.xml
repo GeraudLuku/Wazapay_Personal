@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/underlines"
+            android:gravity="bottom"
+            android:id="@+id/ver_phone_pickninput">
+
+            <com.hbb20.CountryCodePicker
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_defaultLanguage="ENGLISH"
+                app:ccp_textSize="10sp"
+                app:ccp_arrowSize="20dp"
+                app:ccp_hintExampleNumber="true"
+                app:ccp_defaultPhoneCode="237"
+                android:id="@+id/ver_phone_code_picker"/>
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Phone number"
+                android:textSize="18sp"
+                android:inputType="phone|numberSigned"
+                android:textColor="#000000"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_weight="1"
+                android:id="@+id/ver_phone_input"
+                android:background="@android:color/transparent"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:maxLines="2"
+                android:textSize="18sp"
+                android:id="@+id/ver_phone_payText"
+                android:visibility="gone"
+                android:text="Pay sms fee of CFA 100, to receive verification code."/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit"
+                android:padding="8dp"
+                android:visibility="gone"
+                android:id="@+id/ver_phone_buttonPen"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/ver_phone_codeView"
+            android:visibility="gone"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Phone number"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/ver_phone_codeEdt"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Didn't Receive a code ?"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:textColor="#EEA33F"
+                    android:text="Resend Code"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <!-- controls-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="26dp"
+            android:gravity="bottom">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Continue"
+                android:textColor="#fff"
+                android:elevation="30dp"
+                android:shadowColor="#000"
+                android:textSize="18sp"
+                android:id="@+id/ver_phone_buttonMain"
+                android:background="@drawable/continue_btn_background"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:layout_marginStart="10dp"
+                android:text="Back"
+                android:textSize="20sp"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:id="@+id/ver_phone_buttonText"
+                />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:id="@+id/ver_phone_stepCount"
+            android:text="Step   1/2"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

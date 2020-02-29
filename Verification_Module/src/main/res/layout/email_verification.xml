@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!-- email input-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email address"
+            android:textSize="18sp"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:id="@+id/ver_email_input"
+            android:background="@drawable/underlines"
+            android:paddingTop="10dp"
+            />
+
+
+
+        <!-- code input-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/ver_email_codeView"
+            android:visibility="gone"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="enter code(localize hint)"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:id="@+id/emailCodeInput"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Didn't Receive a code ?"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:textColor="#EEA33F"
+                    android:text="Resend Code"
+                    android:onClick="onResendEmailCode"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- approved used-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:id="@+id/ver_email_pendingView"
+            android:visibility="gone"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="17sp"
+                android:text="AccName@email.com"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_edit"
+                android:padding="16dp"/>
+
+
+
+        </LinearLayout>
+
+        <!--controls-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="26dp"
+            android:gravity="bottom">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Continue"
+                android:textColor="#fff"
+                android:elevation="30dp"
+                android:shadowColor="#000"
+                android:textSize="18sp"
+                android:id="@+id/ver_email_buttonMain"
+                android:background="@drawable/continue_btn_background"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:layout_marginStart="10dp"
+                android:text="Back"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:textColor="@color/colordefault"
+                android:id="@+id/ver_email_buttonText"
+                android:background="@android:color/transparent"
+                />
+
+        </LinearLayout>
+
+ 
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
