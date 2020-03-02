@@ -31,7 +31,7 @@
 
         <fragment
             android:id="@+id/nav_host_fragment"
-            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:name="androidx.navigation.dynamicfeatures.fragment.DynamicNavHostFragment"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:defaultNavHost="true"
@@ -63,8 +63,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:itemIconTint="@android:color/black"
         app:headerLayout="@layout/nav_header_personal_dashboard"
+        app:itemIconTint="@android:color/black"
         app:menu="@menu/dashboard_drawer_personal" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

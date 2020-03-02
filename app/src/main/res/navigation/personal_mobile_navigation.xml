@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.wazapaypersonal.Dashboard.Features.HomeFragmentPersonal"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_personal">
+        <action
+            android:id="@+id/action_homeFragmentPersonal_to_personalProfileFragment"
+            app:destination="@id/personalProfileFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_merchant"
+            app:destination="@id/nav_merchant" />
+        <action
+            android:id="@+id/action_nav_home_to_agentActivity"
+            app:destination="@id/nav_agent" />
+        <action
+            android:id="@+id/action_nav_home_to_contactsActivity"
+            app:destination="@id/nav_contacts" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalProfileFragment"
+        android:name="com.example.wazapaypersonal.Dashboard.Features.PersonalProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_personal_profile" />
+    <activity
+        android:id="@+id/nav_merchant"
+        android:name="com.example.wazapaypersonal.Merchant_Listing.MerchantListingActivity"
+        android:label="MerchantListingActivity"
+        tools:layout="@layout/merchant_activity_main" />
+    <activity
+        android:id="@+id/nav_agent"
+        android:name="com.example.wazapaypersonal.Agent_Listing.AgentActivity"
+        android:label="AgentActivity"
+        tools:layout="@layout/agent_activity" />
+    <activity
+        android:id="@+id/nav_contacts"
+        android:name="com.example.wazapaypersonal.Contacts.ContactsActivity"
+        android:label="ContactsActivity"
+        tools:layout="@layout/contacts_main" />
+</navigation>

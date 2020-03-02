@@ -17,6 +17,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.wazapaypersonal.Registration.PersonalAccountActivity;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.Timer;
@@ -173,7 +174,7 @@ public class HomeActivity extends AppCompatActivity {
      ****/
     public void onSignupClickedListener(View view) {
 
-        Intent intent = new Intent("net.wazapay.registration.RegisterActivity");
+        Intent intent = new Intent(this, PersonalAccountActivity.class);
         startActivity(intent);
     }
 

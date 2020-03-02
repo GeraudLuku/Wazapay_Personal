@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.wazapaypersonal.Registration.PersonalAccountActivity;
+
 public class ResetPassword extends AppCompatActivity {
 
     private View mResetPass1, mResetPass2;
@@ -38,7 +40,7 @@ public class ResetPassword extends AppCompatActivity {
     }
 
     public void onSignUp(View view) {
-        startActivity(new Intent("net.wazapay.registration.RegisterActivity"));
+        startActivity(new Intent(this, PersonalAccountActivity.class));
         finish();
 
         //TODO: RegisterActivity is an On-Demand Dynamic Feature handle the download and installation here!

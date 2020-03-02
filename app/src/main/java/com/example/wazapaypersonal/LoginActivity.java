@@ -6,6 +6,9 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.wazapaypersonal.Registration.PersonalAccountActivity;
+import com.example.wazapaypersonal.Verification.VerificationActivity;
+
 public class LoginActivity extends AppCompatActivity {
 
 
@@ -18,7 +21,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onLogin(View view) {
         //startActivity(new Intent("net.wazapay.verification.AccountVerification"));
-        startActivity(new Intent("net.wazapay.verification.MainVerificationActivity"));
+        startActivity(new Intent(this, VerificationActivity.class));
     }
 
     public void goBack(View view) {
@@ -31,15 +34,11 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onSignUp(View view) {
-        startActivity(new Intent("net.wazapay.registration.RegisterActivity"));
+        startActivity(new Intent(this, PersonalAccountActivity.class));
 
         //TODO: RegisterActivity is an On-Demand Dynamic Feature handle the download and installation here!
 //        startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
 //        overridePendingTransition(R.anim.slide_in_left,android.R.anim.slide_out_right);
     }
 
-    public void onClickChangeLocal(View view) {
-        Intent intent = new Intent("net.wazapay.onboarding.PersonalDashboard");
-        startActivity(intent);
-    }
 }

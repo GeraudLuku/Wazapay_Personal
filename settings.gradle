@@ -1,2 +1,2 @@
-include ':app', ':OnBoarding_Module', ':Registration_Module', ':Verification_Module', ':PersonalDashboard_Module'
+include ':app'
 rootProject.name='Wazapay Personal'

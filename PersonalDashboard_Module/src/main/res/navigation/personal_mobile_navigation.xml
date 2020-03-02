@@ -3,30 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:moduleName="PersonalDashboard_Module"
+    app:startDestination="@+id/nav_home"
+    >
 
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.personaldashboard_module.Features.HomeFragmentPersonal"
         android:label="Home"
+        app:moduleName="PersonalDashboard_Module"
         tools:layout="@layout/fragment_home_personal">
         <action
             android:id="@+id/action_nav_home_to_personalProfileFragment"
             app:destination="@id/personalProfileFragment" />
         <action
-            android:id="@+id/action_nav_home_to_loginActivity"
-            app:destination="@id/loginActivity" />
+            android:id="@+id/action_nav_home_to_splashActivity"
+            app:destination="@id/merchantListing" />
     </fragment>
 
     <fragment
         android:id="@+id/personalProfileFragment"
         android:name="com.example.personaldashboard_module.Features.PersonalProfileFragment"
         android:label="Profile"
+        app:moduleName="PersonalDashboard_Module"
         tools:layout="@layout/fragment_personal_profile" />
 
     <activity
-        android:id="@+id/loginActivity"
-        android:name="com.example.wazapaypersonal.LoginActivity"
-        android:label="LoginActivity" />
+        android:id="@+id/merchantListing"
+        android:name="com.example.merchantlisting_module.MerchantListingActivity"
+        android:label="Merchant Listing"
+        app:moduleName="MerchantListing_Module" />
 
 </navigation>
